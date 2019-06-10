@@ -13,7 +13,7 @@ Playground::Playground(void):clr(0) {
 	nodelay(stdscr, TRUE);
 	if (has_colors() == FALSE) {
 		endwin();
-		std::cout << "This colors are not available in this terminal window." << std::endl;
+		std::cout << "your terminal window doesn't have colors." << std::endl;
 		exit(1);
 	}
 	return;

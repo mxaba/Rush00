@@ -36,7 +36,7 @@ void	printDead(Playground & pl, Champ ch) {
    mvprintw(y+=3, 27, "            `*-*   `*-*  `*-*' ");
 	attron(COLOR_PAIR(12));
    mvprintw(y++, 27, "________________________________________");
-   mvprintw(y++, 27, "|          SORRY, YOU ARE DEAD          |");
+   mvprintw(y++, 27, "|          YOU ARE DEAD, LOOSER         |");
    mvprintw(y++, 27, "|_______________________________________|");
    attron(COLOR_PAIR(12));
 
@@ -129,15 +129,15 @@ void	printMenu(Playground & pl) {
 		attron(COLOR_PAIR(2));
 		if (i == 0) {
 			attron(COLOR_PAIR(3));
-			mvprintw(8, 47, " ______ ");
-			mvprintw(9, 47, "| EASY |");
+			mvprintw(8, 47,  " ______ ");
+			mvprintw(9, 47,  "| EASY |");
 			mvprintw(10, 47, "|______|");
 
 			attroff(COLOR_PAIR(3));
 			attron(COLOR_PAIR(2));
 		} else {
-			mvprintw(8, 47, " ______ ");
-			mvprintw(9, 47, "| EASY |");
+			mvprintw(8, 47,  " ______ ");
+			mvprintw(9, 47,  "| EASY |");
 			mvprintw(10, 47, "|______|");
 		}
 		
